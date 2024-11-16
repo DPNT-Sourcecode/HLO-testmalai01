@@ -6,10 +6,19 @@ namespace BeFaster.App.Solutions.HLO
     {
         public static string Hello(string? friendName)
         {
-            return ("Hello, World!");
+            if (friendName != null)
+            {
+                return "Hello, " + friendName + "!";
+            }
+            else
+            {
+
+                return ("Hello, John!");
+            }
             throw new SolutionNotImplementedException();
         }
     }
 }
+
 
 
